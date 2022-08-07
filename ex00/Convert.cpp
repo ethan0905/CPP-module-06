@@ -6,7 +6,7 @@
 /*   By: c2h6 <c2h6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 18:16:09 by c2h6              #+#    #+#             */
-/*   Updated: 2022/08/07 18:16:10 by c2h6             ###   ########.fr       */
+/*   Updated: 2022/08/07 18:27:35 by c2h6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,13 @@
 Convert::Convert( void ) {
     
     std::cout << CYAN "Convert:: " GREEN "Default constructor called" END << std::endl;
+
+    return ;
+}
+
+Convert::Convert( char	*arg ) {
+    
+    std::cout << CYAN "Convert:: " GREEN "Parametric constructor called" END << std::endl;
 
     return ;
 }
@@ -34,14 +41,34 @@ Convert::~Convert( void ) {
     return ;
 }
 
-Convert   &Convert::operator=( Convert const &rhs ) {
+void	Convert::printChar( void )const {
+	
+	return ;
+}
 
-	(void)rhs;
+void	Convert::printInt( void )const {
+	
+	return ;
+}
+
+void	Convert::printFloat( void )const {
+	
+	return ;
+}
+
+void	Convert::printDouble( void )const {
+	
+	return ;
+}
+
+Convert   &Convert::operator=( Convert const &src ) {
+
+	(void)src;
     return (*this);
 }
 
-std::ostream    &operator<<( std::ostream &o, Convert const &rhs) {
+std::ostream    &operator<<( std::ostream &o, Convert const &src) {
 
-	(void)rhs;
+	(void)src;
     return (o);
 }
