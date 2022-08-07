@@ -6,7 +6,7 @@
 /*   By: c2h6 <c2h6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 18:16:09 by c2h6              #+#    #+#             */
-/*   Updated: 2022/08/07 18:57:46 by c2h6             ###   ########.fr       */
+/*   Updated: 2022/08/07 18:58:46 by c2h6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,6 +89,7 @@ Convert   &Convert::operator=( Convert const &src ) {
 std::ostream    &operator<<( std::ostream &o, Convert const &src) {
 
     std::cout << CYAN "Convert:: " GREEN "Operator << called" END << std::endl;
+
 	(void)src;
     return (o);
 }
