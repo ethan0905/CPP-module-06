@@ -6,13 +6,13 @@
 #    By: c2h6 <c2h6@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/27 14:59:45 by esafar            #+#    #+#              #
-#    Updated: 2022/08/07 19:10:03 by c2h6             ###   ########.fr        #
+#    Updated: 2022/08/07 20:11:18 by c2h6             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Convert
 
-SRCS = main.cpp
+SRCS = main.cpp Base.cpp
 
 GCC = c++
 FLAGS = -g -Wextra -Wall -Werror -std=c++98 
