@@ -6,7 +6,7 @@
 /*   By: c2h6 <c2h6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 18:16:02 by c2h6              #+#    #+#             */
-/*   Updated: 2022/08/07 19:47:31 by c2h6             ###   ########.fr       */
+/*   Updated: 2022/08/07 19:53:56 by c2h6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,6 @@ int	main(int ac, char **av)
 		std::cout << "ptr_casted->n: " << ptr_casted->n << "" END << std::endl;
 	}
 	else
-		std::cerr << "Error: invalid synthax. Try with ./execName <value>" << std::endl;
+		std::cerr << "Error: invalid synthax. Try with ./execName" << std::endl;
 	return (0);
 }
