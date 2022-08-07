@@ -6,7 +6,7 @@
 /*   By: c2h6 <c2h6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 19:52:13 by c2h6              #+#    #+#             */
-/*   Updated: 2022/08/07 20:44:38 by c2h6             ###   ########.fr       */
+/*   Updated: 2022/08/07 20:51:17 by c2h6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,9 @@ void    Base::identify( Base *p ) {
 		std::cout << MAGENTA "Class type is [B]" END << std::endl;
 	else if (c)
 		std::cout << WHITE "Class type is [C]" END << std::endl;
-		
+	else
+		std::cerr << RED "Error: cast failed" END << std::endl;
+
 	return ;
 }
 
