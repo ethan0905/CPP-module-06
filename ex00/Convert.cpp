@@ -6,7 +6,7 @@
 /*   By: c2h6 <c2h6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 18:16:09 by c2h6              #+#    #+#             */
-/*   Updated: 2022/08/07 18:32:43 by c2h6             ###   ########.fr       */
+/*   Updated: 2022/08/07 18:37:30 by c2h6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ Convert::~Convert( void ) {
 
 void	Convert::printChar( void )const {
 	
+	std::cout << "char: '" << static_cast<char>(this->_nb) << "'" << std::endl;
 	return ;
 }
 
@@ -64,12 +65,15 @@ void	Convert::printDouble( void )const {
 
 Convert   &Convert::operator=( Convert const &src ) {
 
-	(void)src;
+    // std::cout << CYAN "Convert:: " GREEN "Operator = called" END << std::endl;
+	this->_nb = src._nb;
+	
     return (*this);
 }
 
 std::ostream    &operator<<( std::ostream &o, Convert const &src) {
 
+    // std::cout << CYAN "Convert:: " GREEN "Operator << called" END << std::endl;
 	(void)src;
     return (o);
 }
