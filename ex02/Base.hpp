@@ -6,7 +6,7 @@
 /*   By: c2h6 <c2h6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 19:52:17 by c2h6              #+#    #+#             */
-/*   Updated: 2022/08/07 20:10:56 by c2h6             ###   ########.fr       */
+/*   Updated: 2022/08/07 20:16:53 by c2h6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class Base {
         
         Base    *generate( void );
         void    identify( Base *p );
-        void    identify( Base &p );
+        // void    identify( Base &p );
 
     private:
 };

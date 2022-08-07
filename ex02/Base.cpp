@@ -6,7 +6,7 @@
 /*   By: c2h6 <c2h6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 19:52:13 by c2h6              #+#    #+#             */
-/*   Updated: 2022/08/07 20:11:58 by c2h6             ###   ########.fr       */
+/*   Updated: 2022/08/07 20:27:24 by c2h6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,10 +45,21 @@ Base    *Base::generate( void ) {
 	return (dest);
 }
 
-// void    Base::identify( Base *p ) {
+void    Base::identify( Base *p ) {
 
-// 	return ;
-// }
+	A	*a = dynamic_cast<A*>(p);
+	B	*b = dynamic_cast<B*>(p);
+	C	*c = dynamic_cast<C*>(p);
+
+	if (a)
+		std::cout << YELLOW "Class type is [A]" END << std::endl;
+	else if (b)
+		std::cout << MAGENTA "Class type is [B]" END << std::endl;
+	else if (c)
+		std::cout << WHITE "Class type is [C]" END << std::endl;
+		
+	return ;
+}
 
 // void    Base::identify( Base &p ) {
 
