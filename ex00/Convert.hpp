@@ -6,7 +6,7 @@
 /*   By: c2h6 <c2h6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 18:16:06 by c2h6              #+#    #+#             */
-/*   Updated: 2022/08/07 18:27:49 by c2h6             ###   ########.fr       */
+/*   Updated: 2022/08/07 18:31:30 by c2h6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,7 @@
 
 #include <iostream>
 #include <string>
-
-#define RED "\033[1;31m"
-#define GREEN "\033[1;32m"
-#define END "\033[0m"
-
-#define CYAN "\033[1;36m"
-#define YELLOW "\033[1;33m"
-#define MAGENTA "\033[1;35m"
-#define WHITE "\033[1;37m"
-
-#define GREY "\033[1;90m"
+#include "color.h"
 
 class Convert {
     
@@ -43,6 +33,7 @@ class Convert {
         Convert  &operator=( Convert const &src );
         
     private:
+		double	_nb;
 };
 
 std::ostream    &operator<<( std::ostream &o, Convert const &src);

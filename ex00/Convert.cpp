@@ -6,7 +6,7 @@
 /*   By: c2h6 <c2h6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 18:16:09 by c2h6              #+#    #+#             */
-/*   Updated: 2022/08/07 18:27:35 by c2h6             ###   ########.fr       */
+/*   Updated: 2022/08/07 18:32:43 by c2h6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,12 @@ Convert::Convert( void ) {
 Convert::Convert( char	*arg ) {
     
     std::cout << CYAN "Convert:: " GREEN "Parametric constructor called" END << std::endl;
-
+	this->_nb = atof(arg);
+	
     return ;
 }
 
-Convert::Convert( Convert & src ) {
+Convert::Convert( Convert const & src ) {
 
     std::cout << CYAN "Convert:: " GREEN "Copy constructor called" END << std::endl;
     *this = src;
