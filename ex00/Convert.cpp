@@ -6,7 +6,7 @@
 /*   By: c2h6 <c2h6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 18:16:09 by c2h6              #+#    #+#             */
-/*   Updated: 2022/08/07 18:46:05 by c2h6             ###   ########.fr       */
+/*   Updated: 2022/08/07 18:53:16 by c2h6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,11 +55,18 @@ void	Convert::printChar( void )const {
 }
 
 void	Convert::printInt( void )const {
-	
+
+	if (!(this->_nb >= INT_MIN && this->_nb <= INT_MAX))
+		std::cerr << "int: impossible" << std::endl;
+	else
+		std::cout << "int: " << static_cast<int>(this->_nb) << std::endl;	
+
 	return ;
 }
 
 void	Convert::printFloat( void )const {
+	
+	std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(this->_nb) << "f" << std::endl;
 	
 	return ;
 }

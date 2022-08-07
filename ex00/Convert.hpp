@@ -6,7 +6,7 @@
 /*   By: c2h6 <c2h6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 18:16:06 by c2h6              #+#    #+#             */
-/*   Updated: 2022/08/07 18:42:25 by c2h6             ###   ########.fr       */
+/*   Updated: 2022/08/07 18:53:58 by c2h6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 # define CONVERT_HPP
 
 #include <iostream>
-#include <string>
+#include <string> // atof function
+#include <iomanip> // std::setprecision function
 #include "color.h"
 
 # define CHAR_MIN_PRINTABLE 33
