@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Base.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: c2h6 <c2h6@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 19:52:17 by c2h6              #+#    #+#             */
-/*   Updated: 2022/08/07 20:32:38 by c2h6             ###   ########.fr       */
+/*   Updated: 2022/08/09 16:25:45 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define BASE_HPP
 
 #include <iostream>
+#include <stdlib.h>
 #include "color.hpp"
 
 class Base {
